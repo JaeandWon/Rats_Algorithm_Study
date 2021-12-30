@@ -1,37 +1,38 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#define SIZE 101  //단어의 길이는 100 
-#define ALPHABET 26 //알파벳 개수는 총 26개 
-/*
-* 입력
-* 공백인지 아닌지 판단
-* 알파벳이면 
-*/
+#include <string.h>
+#define SIZE 101  
+#define ALPHABET 26
+
 int main()
 {
     char S[SIZE] = " ";
-    int index[ALPHABET] = { 0 }; //배열을 0이 아닌 숫자 n으로 초기화 못함. 
+    int alphabet[ALPHABET] = { 0 };
+    int length, index;
 
     scanf("%s", S);
+    length = strlen(S); // sizeof(S)/sizeof(int)하면 틀림 
 
-    for (int i = 0; i < SIZE; i++)
+    for (int i = 0; i < ALPHABET; i++) 
     {
-        for (int j = 0; j < ALPHABET; j++)
+        alphabet[i] = -1;
+    }
+
+    for (int j = 0; j < length; j++)
+    {
+        index = S[j] - 'a';
+        if (alphabet[index] == -1)
         {
-            if (S[i] == 'a' + j);
-            {
-                index[j] = j;
-            }
-            else if (S[i] == NULL)
-            {
-                index[j] = -1;
-            }
+            alphabet[index] = j;
         }
-
     }
 
-    for (int j = 0; j < ALPHABET; j++)
-    {
-        printf("%d ", index[j]);
+    for (int i = 0; i < 26; i++) 
+    { 
+        printf("%d", alphabet[i]);
+    
+        if (i < 25) 
+            printf(" "); 
     }
+
 }

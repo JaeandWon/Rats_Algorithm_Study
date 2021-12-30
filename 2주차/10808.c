@@ -26,9 +26,9 @@ int main()
         {
             printf("%d", alphabet[j]);
         }
-        else 
+        else
         {
             printf("%d ", alphabet[j]);
-        }      
+        }
     }
 }
