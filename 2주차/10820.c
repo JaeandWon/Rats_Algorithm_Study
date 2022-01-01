@@ -8,7 +8,7 @@ int main()
     char S[101];
     int space, large, small, num;
  
-    while (gets(S) != '\0')  //scanf("%[]")..? 
+    while (gets(S) != '\0')  //scanf("%[]")... ?  
     {
         space = 0, large = 0, small = 0, num = 0;
         for (int i = 0; i < strlen(S); i++)
