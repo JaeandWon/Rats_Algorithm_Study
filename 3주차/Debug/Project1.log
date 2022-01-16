@@ -1,4 +1,2 @@
-﻿  2004x.c
-C:\Users\jaewo\Desktop\Rats_Algorithm_Study\Project1\2004x.c(7,23): warning C4244: '+=': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\jaewo\Desktop\Rats_Algorithm_Study\Project1\2004x.c(17,23): warning C4244: '+=': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Project1.vcxproj -> C:\Users\jaewo\Desktop\Rats_Algorithm_Study\Project1\Debug\Project1.exe
+﻿  6588x.c
+  Project1.vcxproj -> C:\Users\jaewo\Desktop\Rats_Algorithm_Study\3주차\Debug\Project1.exe
