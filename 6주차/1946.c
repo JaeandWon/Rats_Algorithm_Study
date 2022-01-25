@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
-typedef struct {
+typedef struct { 
     int a; // 서류심사 순위
     int b; // 면접 성적의 순위
 } Person;
