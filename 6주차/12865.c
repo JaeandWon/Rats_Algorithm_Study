@@ -1,6 +1,5 @@
 # define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-//#include<algorithm>
 #define max(a,b) a>b?a:b
 
 int weight[100];
