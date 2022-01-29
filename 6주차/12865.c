@@ -4,11 +4,15 @@
 
 int weight[100];
 int value[100];
+int DP[101][100001];
 int n;	//물건의 개수
 int k;	//제한 무게
 
 int knapsack(int index, int current_weight) {
 
+	if (DP[index][current_weight] > 0) {
+		return DP[index][current_weight];
+	}
 	if (index == n) return 0;		//입력받은 물건의 개수만큼 가방에 넣었다면 중지
 
 	int add_item = 0;	//물건을 추가했을 때 가치를 저장할 변수
@@ -19,7 +23,7 @@ int knapsack(int index, int current_weight) {
 
 	int no_add_item = knapsack(index + 1, current_weight);	//다음 물건을 추가하지 않은 가치를 저장
 
-	return max(add_item, no_add_item);	//물건을 추가했을 때 가치와 추가하지 않았을 때 가치 중 큰 가치를 리턴
+	return DP[index][current_weight] = max(add_item, no_add_item);	//물건을 추가했을 때 가치와 추가하지 않았을 때 가치 중 큰 가치를 리턴
 
 }
 
