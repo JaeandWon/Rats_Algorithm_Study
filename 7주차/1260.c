@@ -22,12 +22,12 @@ void dfs(int vertex_start, int vertex) //탐색을 시작할 vertex의 번호, vertex 개�
     return;
 }
 
-void bfs(int vertex_start, int vertex)
+void bfs(int vertex_start, int vertex) //탐색을 시작할 vertex의 번호, vertex 개수
 {
-    int front = 0, rear = 0, pop;
+    int front = 1, rear = 1, pop;
     
     printf("%d ", vertex_start);
-    queue[0] = vertex_start;
+    queue[1] = vertex_start;
     rear++;
     BFS_V[vertex_start] = 1;
 
